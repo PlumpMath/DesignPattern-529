@@ -1,20 +1,18 @@
 package com.vquochuy.decorator.solve;
 
-public class CD extends ComponentDecorator {
+public class Mouse extends ComponentDecorator {
 	private Computer computer;
-
-	public CD(Computer computer) {
+	public Mouse(Computer computer) {
 		this.computer = computer;
 	}
-
 	@Override
 	public String description() {
-		return computer.description() + " CD";
+		return computer.description() +" Mouse";
 	}
 
 	@Override
 	public double cost() {
-		return 0.2 + computer.cost();
+		return 0.1 + computer.cost() ;
 	}
 
 }

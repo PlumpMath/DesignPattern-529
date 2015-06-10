@@ -24,4 +24,12 @@ public class AcmeClass implements AcmeInterface {
 		return lastName;
 	}
 
+	public AcmeClass(String firstName, String lastName) {
+		this.firstName = firstName;
+		this.lastName = lastName;
+	}
+
+	public AcmeClass() {
+	}
+
 }

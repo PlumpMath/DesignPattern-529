@@ -9,5 +9,12 @@ public class Main {
 		streetRace.go();
 		helicopter.go();
 		jet.go();
+		
+		jet.setGoAlgorithm(new GoByDriveAlgorithm());
+		jet.go();
+		jet.setGoAlgorithm(new GoByFlyAlgorithm());
+		jet.go();
+		jet.setGoAlgorithm(new GoByFlyFastAlgorithm());
+		jet.go();
 	}
 }

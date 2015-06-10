@@ -12,4 +12,9 @@ public class Disk extends ComponentDecorator {
 		return computer.description()+" Disk";
 	}
 
+	@Override
+	public double cost() {
+		return 1.0 + computer.cost();
+	}
+
 }

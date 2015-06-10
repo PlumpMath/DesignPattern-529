@@ -13,7 +13,7 @@ public class AceToAcmeApdater implements AcmeInterface {
 	}
 	
 	@Override
-	public void setFirstName(String firstName) {
+	public void setFirstName(String firstNam) {
 		this.firstName = firstName;
 	}
 
